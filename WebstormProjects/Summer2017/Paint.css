@@ -1,0 +1,20 @@
+body{
+    background-color: powderblue;
+
+}
+#Login{
+    color: white;
+    font-size:30px;
+    text-align: center;
+    line-height: 10px;
+}
+#Register{
+    font-size: 20px;
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+}
+#Hoopla{
+    display:block;
+    margin: 0 auto;
+}
