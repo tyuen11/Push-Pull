@@ -1,6 +1,9 @@
 body{
     background-color: powderblue;
-
+}
+header{
+    text-align: center;
+   font-size: 50px;
 }
 #Login{
     color: white;
@@ -17,4 +20,8 @@ body{
 #Hoopla{
     display:block;
     margin: 0 auto;
+}
+#Creation{
+    font-size: 30px;
+
 }
