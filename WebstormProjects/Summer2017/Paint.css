@@ -11,6 +11,11 @@ header{
     text-align: center;
     line-height: 10px;
 }
+#Buttons{
+    font-size: 20px;
+    text-align: center;
+}
+
 #Register{
     font-size: 20px;
     text-align: center;
