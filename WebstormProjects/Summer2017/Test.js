@@ -1,9 +1,12 @@
 /**
  * Created by Tim on 5/29/2017.
  */
+//to write and read from firebase's database (https://firebase.google.com/docs/database/web/read-and-write)
+//var database = firebase.database;
 
-(function() {
+
     // Initialize Firebase
+
     const config = {
         apiKey: "AIzaSyBwuBhMX_ydPOg31SuZ5izd90NbwcTKyHA",
         authDomain: "user-push-pull.firebaseapp.com",
@@ -12,20 +15,58 @@
         storageBucket: "user-push-pull.appspot.com",
         messagingSenderId: "1058245797988"
     };
+
     firebase.initializeApp(config);
 // creating variables for elements from html (HomePage.html)
-    const txtEmail = document.getElementById("Email");
-    const txtPassword = document.getElementById("Password");
+    const txtEmail = document.getElementById("email");
+    const txtPassword = document.getElementById("password");
     const btnLogin = document.getElementById("Login_Button");
+    const btnSignUp = document.getElementById("Register_Button");
+    const btnLogout = document.getElementById("Logout");
 
-// login event
+if (btnLogin) {
     btnLogin.addEventListener("click", e => {
         // get email and password
-        const email = txtEmail.value;
-        const pass = txtPassword.value;
-        const auth = firebase.auth();
+        var email = txtEmail.value;
+        var pass = txtPassword.value;
+        var auth = firebase.auth();
         // sign in
-        const promise = auth.signInWithEmailAndPassword(email, pass);
+        var promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
     });
-}());
+}
+
+if (btnSignUp) {
+    btnSignUp.addEventListener("click", e => {
+        // TODO: check if email and password is valid
+        var email = txtEmail.value;
+        var pass = txtPassword.value;
+        var auth = firebase.auth();
+        //create
+        var promise = auth.createUserWithEmailAndPassword(email, pass);
+        promise.catch(e => console.log(e.message));
+    });
+}
+
+if (btnLogout) {
+    btnLogout.addEventListener("click", e => {
+
+        firebase.auth().signOut();
+    })
+}
+
+    //realtime listener ???
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if (firebaseUser) {
+            console.log(firebaseUser);
+            window.location.replace("Account_Page.html");
+        } else {
+            console.log("not logged in");
+        }
+    });
+
+
+
+
+
+
