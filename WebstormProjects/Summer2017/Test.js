@@ -33,6 +33,15 @@ if (btnLogin) {
         // sign in
         var promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+
+        firebase.auth().onAuthStateChanged(firebaseUser => {
+            if (firebaseUser) {
+                console.log(firebaseUser);
+                window.location.assign("Account_Page.html");
+            } else {
+                console.log("not logged in");
+            }
+        });
     });
 }
 
@@ -50,20 +59,18 @@ if (btnSignUp) {
 
 if (btnLogout) {
     btnLogout.addEventListener("click", e => {
-
         firebase.auth().signOut();
+        window.location.replace("HomePage.html");
     })
 }
 
-    //realtime listener ???
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-        if (firebaseUser) {
-            console.log(firebaseUser);
-            window.location.replace("Account_Page.html");
-        } else {
-            console.log("not logged in");
-        }
-    });
+firebase.auth().onAuthStateChanged(firebaseUser => {
+    if (firebaseUser) {
+        console.log(firebaseUser);
+    } else {
+        console.log("not logged in");
+    }
+}); 
 
 
 
