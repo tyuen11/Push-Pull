@@ -70,6 +70,8 @@ if (btnSignUp) {
         var promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
         // TODO: make ^^ visible to user
+        var user = firebase.auth().currentUser;
+        console.log(user.uid);
 
         //Homepage to User's page after sign up
         firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -111,9 +113,9 @@ if (btnLogout) {
 
 
     }
-        start.child(user.uid).set({
+        start.child(user.uid).update({
             UID: user.uid,
-            Email: email
+            Email: email,
         });
 
     // all in Account_Page.html
