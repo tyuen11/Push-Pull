@@ -33,7 +33,6 @@
 
     //start path for all users
     var start = database.child("users");
-    var item = database.child("users/items");
 
 
 // Login Event
@@ -43,12 +42,12 @@
             var email = txtEmail.value;
             var pass = txtPassword.value;
             var auth = firebase.auth();
-            //user's uid
             // sign in
             var promise = auth.signInWithEmailAndPassword(email, pass);
             promise.catch(e => console.log(e.message));
+            // TODO: make ^^ visible to user (email or password is incorrect)
 
-            // Homepage to User's Page after registering
+            // Homepage to User's Page after login
             firebase.auth().onAuthStateChanged(firebaseUser => {
                 if (firebaseUser) {
                     console.log(firebaseUser);
@@ -60,7 +59,7 @@
         });
     }
 
-    // Sign Up Event
+// Sign Up Event
 if (btnSignUp) {
     btnSignUp.addEventListener("click", e => {
         // TODO: check if email and password is valid
@@ -70,6 +69,9 @@ if (btnSignUp) {
         //create account
         var promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+        // TODO: make ^^ visible to user
+
+        //Homepage to User's page after sign up
         firebase.auth().onAuthStateChanged(firebaseUser => {
             if (firebaseUser) {
                 console.log(firebaseUser);
@@ -82,7 +84,7 @@ if (btnSignUp) {
     });
 }
 // Logout Event
-    if (btnLogout) {
+if (btnLogout) {
     btnLogout.addEventListener("click", e => {
             firebase.auth().signOut();
             window.location.replace("HomePage.html");
@@ -92,10 +94,11 @@ if (btnSignUp) {
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
             console.log(firebaseUser);
-            console.log(firebaseUser.uid);
         } else {
             console.log("not logged in");
-    }
+
+        }
+
 
   // get user's name onto Account_Page.html header
     var user = firebase.auth().currentUser;
@@ -104,13 +107,16 @@ if (btnSignUp) {
     if (user){
         email = user.email;
         document.getElementById("UserName").innerHTML = email;
+        // TODO: show all user's ITEMS
+
+
     }
         start.child(user.uid).set({
             UID: user.uid,
             Email: email
         });
-    // all in Account_Page.html
 
+    // all in Account_Page.html
      if (btnItem){
         btnItem.addEventListener("click", e => {
            document.getElementById("Add_Item").style.display = "flex";
@@ -119,7 +125,6 @@ if (btnSignUp) {
     if (btnCancel){
         btnCancel.addEventListener("click", e=> {
             document.getElementById("Add_Item").style.display = "none";
-
         })
     }
     if (btnAdd){
@@ -129,18 +134,19 @@ if (btnSignUp) {
         })
     }
 
-    // create node for each user that only they can read and write to
+    // adds item to user's node
     function adding_to_list (item_textfield){
-            database.update(item.update({
+        //directs to user uid node in database
+        var user_path = start.child(user.uid).child("item");
+        user_path.push({
                 item: item_textfield
-            }));
-
-
-        }
-
-
-
+            });
+        console.log("Added");
+        //TODO: ^^ make visible to user
+    }
 });
+
+
 
 
 
