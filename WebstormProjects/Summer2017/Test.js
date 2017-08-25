@@ -70,8 +70,7 @@ if (btnSignUp) {
         var promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
         // TODO: make ^^ visible to user
-        var user = firebase.auth().currentUser;
-        console.log(user.uid);
+
 
         //Homepage to User's page after sign up
         firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -93,7 +92,7 @@ if (btnLogout) {
         })
     }
 
-    firebase.auth().onAuthStateChanged(firebaseUser => {
+firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
             console.log(firebaseUser);
         } else {
@@ -116,7 +115,7 @@ if (btnLogout) {
         start.child(user.uid).update({
             UID: user.uid,
             Email: email,
-        });
+            });
 
     // all in Account_Page.html
      if (btnItem){
@@ -146,8 +145,19 @@ if (btnLogout) {
         console.log("Added");
         //TODO: ^^ make visible to user
     }
-});
+    console.log("...");
+    show();
 
+
+    var database_to_show = firebase.database().ref(user.uid);
+    function show() {
+        database_to_show.on("child_added", function (snapshot, prevChildKey) {
+            var newItem = snapshot.val();
+            console.log(newItem);
+            console.log(prevChildKey.val());
+        });
+    }
+});
 
 
 

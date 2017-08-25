@@ -17,14 +17,14 @@
     <favorites_list name="Summer2017" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.9">
+    <splitter split-orientation="horizontal" split-proportion="0.48020834">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
           <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/HomePage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="104">
-                  <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="64" />
+                <state relative-caret-position="130">
+                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -33,8 +33,8 @@
           <file leaf-file-name="Test.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-540">
-                  <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+                <state relative-caret-position="425">
+                  <caret line="148" column="11" lean-forward="false" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#39#0" expanded="false" />
                     <element signature="e#198#513#0" expanded="false" />
@@ -46,8 +46,8 @@
           <file leaf-file-name="Account_Page.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Account_Page.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state relative-caret-position="155">
+                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -67,8 +67,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/basicWebsiteTemplate/TabOpener/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1395">
-                  <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+                <state relative-caret-position="248">
+                  <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -81,8 +81,8 @@
           <file leaf-file-name="openTab.js" pinned="false" current-in-tab="true">
             <entry file="file://$USER_HOME$/basicWebsiteTemplate/TabOpener/openTab.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="44" />
+                <state relative-caret-position="450">
+                  <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -103,7 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>website_input</find>
       <find>jselec</find>
       <find>init</find>
       <find>ready</find>
@@ -130,9 +129,10 @@
       <find>myFirebase.on</find>
       <find>tab</find>
       <find>url</find>
-      <find>prevChildKey</find>
       <find>function</find>
       <find>jquery</find>
+      <find>prevChildKey</find>
+      <find>location.reload</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -146,8 +146,9 @@
         <option value="$PROJECT_DIR$/Create_Account.html" />
         <option value="$PROJECT_DIR$/Add_Data.html" />
         <option value="$PROJECT_DIR$/Paint.css" />
-        <option value="$PROJECT_DIR$/HomePage.html" />
+        <option value="$USER_HOME$/basicWebsiteTemplate/TabOpener/openTab.js" />
         <option value="$PROJECT_DIR$/Account_Page.html" />
+        <option value="$PROJECT_DIR$/HomePage.html" />
         <option value="$PROJECT_DIR$/Test.js" />
       </list>
     </option>
@@ -181,7 +182,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -329,12 +330,12 @@
       <workItem from="1502212218403" duration="7319000" />
       <workItem from="1502313518301" duration="21726000" />
       <workItem from="1502746164654" duration="4995000" />
-      <workItem from="1502855525884" duration="15153000" />
+      <workItem from="1502855525884" duration="33261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200691000" />
+    <option name="totallyTimeSpent" value="218799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,7 +376,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -748,42 +749,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/basicWebsiteTemplate/TabOpener/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="248">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Account_Page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HomePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="64" />
+        <state relative-caret-position="155">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/basicWebsiteTemplate/TabOpener/openTab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="450">
+          <caret line="90" column="28" lean-forward="false" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="148" column="11" lean-forward="false" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#198#513#0" expanded="false" />
