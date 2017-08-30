@@ -48,3 +48,7 @@ header{
     border-radius: 6px;
     flex-direction: column;
 }
+
+#item_list{
+    text-align: center;
+}
